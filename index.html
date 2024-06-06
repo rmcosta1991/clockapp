@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clock App</h1>
+        <form id="countdownForm">
+            <label for="eventLabel">Event Name:</label>
+            <input type="text" id="eventLabel" required>
+            
+            <label for="eventDate">Event Date:</label>
+            <input type="datetime-local" id="eventDate" required>
+            
+            <button type="submit">Start Countdown</button>
+            <button id="resetButton" class="hidden">Reset Countdown</button>
+        </form>
+        
+        <div id="countdown" class="hidden">
+            <h2 id="eventTitle"></h2>
+            <div id="timer">
+                <span id="months">00</span> months 
+                <span id="weeks">00</span> weeks 
+                <span id="days">00</span> days 
+                <span id="hours">00</span> hours 
+                <span id="minutes">00</span> minutes 
+                <span id="seconds">00</span> seconds
+            </div>
+        </div>
+        <div id="eventMessage" class="hidden">
+            <p id="eventMessageText"></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
